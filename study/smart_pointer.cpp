@@ -15,7 +15,7 @@ private:
 	int x_;
 	int y_;
 public:
-	Point(int x = 0, int y = 0) :x_(x), y_(y) {}
+	explicit Point(int x = 0, int y = 0) :x_(x), y_(y) {}
 	void Print() const { cout << x_ << ',' << y_ << endl; }
 };
 
@@ -35,6 +35,7 @@ public:
 };
 
 void main() {
+	//Point p = 30;
 
 	PointPtr p1 = new Point(2, 3);
 	PointPtr p2 = new Point(5, 5);
