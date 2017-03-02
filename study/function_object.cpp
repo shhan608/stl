@@ -10,12 +10,12 @@ Function Object
 using namespace std;
 
 void Print(int a, int b) {
-	cout << "전역 함수: " << a << "," << b << endl;
+	cout << "Global Function: " << a << "," << b << endl;
 }
 
 struct Functor {
 	void operator() (int a, int b) {
-		cout << "함수 객체: " << a << "," << b << endl;
+		cout << "Function Object: " << a << "," << b << endl;
 	}
 };
 
